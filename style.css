@@ -30,7 +30,7 @@ body {
   }
 }
 
-.outer:after {
+.outer::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -62,8 +62,8 @@ body {
   border-radius: 50%;
 }
 
-.inner:before,
-.inner:after {
+.inner::before,
+.inner::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -73,10 +73,10 @@ body {
   opacity: 0;
   animation: pulse 2s ease infinite;
 }
-.inner:before {
+.inner::before {
   animation-delay: 0s;
 }
-.inner:after {
+.inner::after {
   animation-delay: 1s;
 }
 
